@@ -3,11 +3,10 @@
 // The next line is needed if running in JavaScript Mode with Processing.js
 /* @pjs preload="moonwalk.jpg"; */
 
-PImage bg;
+PImage bg, logos;
 Table table, estacionesTable;
 
-int[] colores = { 
-  #57fcc4, #ffd332, #fb6622, #a358d7, #60adb5, #ff4455, #9de836};
+int[] colores = { #57fcc4, #ffd332, #fb6622, #a358d7, #60adb5, #ff4455, #9de836};
 
 PFont f;
 PFont flight;
@@ -15,8 +14,11 @@ PFont flight;
 int canvasX = 1100;
 int canvasY = 687;
 
+//float xDegree = -99.2166;
+//float yDegree = 19.3975;
+
 float xDegree = -99.2166;
-float yDegree = 19.3975;
+float yDegree = 19.4499;
 
 Viaje viajes[];
 Viaje arrayDibujo[]; // = new Viaje[tamano];
@@ -41,6 +43,8 @@ void setup() {
   //cargarmapa
   size(1100, 687);
   bg = loadImage("img/bici2.png");
+  logos = loadImage("img/logogdfecobicich.jpg");
+  
   background(bg);
 
   //abrir csv
@@ -95,19 +99,26 @@ void draw() {
 
   if ( millis() - lastTime > 50 ) {
     background(bg);
+    
     drawEstaciones();
     currentDate = buildDate(ie, ow);
 
     stroke(#000000, 100);
     fill(#000000, 100);
     rect(0, 0, 210, 687);
-
+    
+    image(logos,0,627);
+    
     fill(255);
     textFont(f, 26);
-    text(currentDate+" hrs.", 15, 30);
+    text("Hora. " + currentDate , 15, 50);
+    
+    //textFont(f, 20);
+    //text("Un día en ecobici", 15, 650);
+    
     textFont(flight, 18);
-    text("\nCiudad de México", 15, 30);
-
+    text("\nCiudad de México", 15, 55);
+  
     //señales
     fill(255);
     stroke(255);

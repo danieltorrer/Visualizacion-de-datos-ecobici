@@ -1,11 +1,12 @@
 public int degreesToXPixels(float degrees) {
-  return  (int) abs( (xDegree - degrees)  * 12373.4531);
+  //return  (int) abs( (xDegree + degrees)  * 12373.4531);
+  return  (int) abs( (degrees - xDegree)  * 12373.4531 );
 }
 
 public int degreesToYPixels(float degrees) {
+  //return  (int) abs( (degrees - yDegree) * 13110.6870 );
   return  (int) abs ((yDegree - degrees) * 13110.6870);
 }
-
 
 int readViajeCSV() {
   table = loadTable("lastday.csv", "header");
