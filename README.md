@@ -3,7 +3,7 @@ Viajes ecobici
 
 [![Visualización](https://i.ytimg.com/vi/siua0sVxEKY/mqdefault.jpg)](http://www.youtube.com/watch?v=T-D1KVIuvjA)
 
-Visualización de datos en processing que muestra como es un día para servicio ecobici de la Ciudad de México. 
+Visualización de datos en processing que muestra un día común en el servicio ecobici de la Ciudad de México. 
 
 ### Versión
 1.0
