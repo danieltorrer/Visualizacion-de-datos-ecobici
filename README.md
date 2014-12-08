@@ -15,9 +15,11 @@ Visualización de datos en processing que muestra como es un día para servicio 
 ### Tecnologías
 * [Processing] Animación y lógica
 * [TileMill] Diseño de las capas del mapa y esquema de colores.
+* [AWK] Lenguaje para la maniplación de grandes cantidades de texto
 
 
 
 [TileMill]:https://www.mapbox.com/tilemill/
 [Processing]:https://www.processing.org/
 [Dataset]: http://datos.labplc.mx/datasets/view/ecobici
+[AWK]: http://es.wikipedia.org/wiki/AWK
