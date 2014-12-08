@@ -3,7 +3,10 @@ Viajes ecobici
 
 [![Visualización](https://i.ytimg.com/vi/siua0sVxEKY/mqdefault.jpg)](https://www.youtube.com/watch?v=siua0sVxEKY)
 
-Visualización de datos en processing que muestra como es un día para servicio ecobici de la Ciudad de México. 
+Visualización de datos en processing que muestra como es un día para servicio ecobici de la Ciudad de México. Los datos se obtuvieron del Laboratorio de Datos de la Ciudad de México y fueron procesados con AWK para estandarizarlos y darles mas legibilidad.
+
+### [Dataset]
+
 
 ### Versión
 1.0
@@ -17,4 +20,4 @@ Visualización de datos en processing que muestra como es un día para servicio 
 
 [TileMill]:https://www.mapbox.com/tilemill/
 [Processing]:https://www.processing.org/
-
+[Dataset]: http://datos.labplc.mx/datasets/view/ecobici
